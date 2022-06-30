@@ -1,0 +1,143 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+/* Debut header*/
+header{
+    background-color: #4F5D75;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #BFC0C0;
+}
+h1{
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    font-weight: bold;
+}
+h1::before{
+    content: open-quote;
+    color: #EF8354;
+}
+h1::after{
+    content: close-quote;
+    color: #EF8354;
+}
+li{
+    list-style-type: none;
+    margin-top: 5vw;
+    width: 100%;
+    padding: 10%;
+    border-radius: 15%;
+    transition: 1s ease-in-out;
+}
+li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+li:hover {
+    background-color: #EF8354;
+}
+header button{
+    background-color: #2D3142;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 25%;
+    text-transform: uppercase;
+    padding: 2%;
+}
+/* Fin header */
+/* Tout les titre */
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Debut tableau */
+table{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 90%;
+}
+td{
+    border: 1px solid black;
+    padding: 2% 0 2% 1%;
+    width: 10vw;
+}
+tr:first-of-type{
+    text-align: center;
+}
+tr:first-of-type, tr:last-of-type{
+    background-color: #4F5D75;
+    color: #FFFFFF;
+}
+/* Fin tableau */
+/* Debut carte plats*/
+#cartePlats article{
+    width: 80%;
+    height: 25vw;
+    margin: 0 auto 2%;
+    padding-right: 3%;
+}
+#cartePlats img{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#cartePlats h3, #cartePlats p{
+    margin: 0 0 0 33%;
+}
+#cartePlats h3{
+    text-transform: uppercase;
+    margin-bottom: 1%;
+    padding-top: 1%;
+}
+#cartePlats p{
+    text-align: center;
+    font-size: 1rem;
+}
+#cartePlats article:nth-child(2n){
+    background-color: #EAEBEB;
+    border-radius: 15% 5% 5% 15%;
+}
+#cartePlats article:nth-child(2n) img{
+    background-color: #EAEBEB;
+    border-radius: 15% 0 0 15%;
+}
+#cartePlats article:nth-child(2n+1) img{
+    border-radius: 15%;
+}
+/* Debut carte plats */
+/* Separateur */
+#separateur{
+    background-image: url("../img/img-12.jpg");
+    width: 85%;
+    height: 40vw;
+    margin: 0 auto;
+    background-attachment: fixed;
+}
+/* Fin separateur*/
+/* Debut blog */
+#blogZone article{
+    width: 70%;
+    margin: 0 auto 5%;
+    box-shadow: 0 0 20px 0 black;
+    padding-bottom: 1%;
+}
+#blogZone img{
+    width: 100%;
+    position: relative;
+    top: -10vw;
+}
+#blogZone h3, #blogZone p{
+    text-align: center;
+}
+.overflow{
+    overflow: hidden;
+    width: 100%;
+    height: 20vw;
+}
+/* Fin blog */
+.clear{
+    clear: both;
+}
