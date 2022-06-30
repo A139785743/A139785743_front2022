@@ -19,6 +19,7 @@ h1{
     font-family: 'Righteous', cursive;
     font-weight: bold;
     margin: 0 10%;
+    quotes: "“" "“";
 }
 h1::before{
     content: open-quote;
