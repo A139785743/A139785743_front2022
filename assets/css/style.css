@@ -70,6 +70,7 @@ td{
     border: 1px solid black;
     padding: 2% 0 2% 1%;
     width: 10vw;
+    font-size: 3vw;
 }
 tr:first-of-type{
     text-align: center;
@@ -106,14 +107,14 @@ tr:first-of-type, tr:last-of-type{
 }
 #cartePlats article:nth-child(2n){
     background-color: #EAEBEB;
-    border-radius: 15% 5% 5% 15%;
+    border-radius: 20px;
 }
 #cartePlats article:nth-child(2n) img{
     background-color: #EAEBEB;
-    border-radius: 15% 0 0 15%;
+    border-radius: 20px 0 0 20px;
 }
 #cartePlats article:nth-child(2n+1) img{
-    border-radius: 15%;
+    border-radius: 20px;
 }
 /* Debut carte plats */
 /* Separateur */
@@ -156,10 +157,7 @@ footer{
 footer a{
     color: #EF8354;
 }
-form{
-    width: 70%;
-    margin: 0 auto;
-}
+
 #bordure{
     border: 2px solid var(--c_white);
     width: 60vw;
@@ -169,6 +167,9 @@ form h4{
     text-align: left;
     margin: 0 0 0 5%;
 }
+form div label{
+    margin-top: 17%;
+}
 #bordure div{
     display: flex;
     justify-content: space-between;
@@ -177,6 +178,7 @@ form input, form select{
     border-radius: 10px;
     height: 4vh;
     margin-top: 1%;
+    padding-left: 1%;
 }
 footer h3{
     margin-top: 5%;
@@ -186,6 +188,7 @@ form textarea{
     width: 50%;
     height: 10vw;
     border-radius: 20px;
+    padding-left: 1%;
 }
 footer button{
     background-color: var(--c_dark);
@@ -209,10 +212,10 @@ footer button{
 
 /* Le responsive */
 @media (min-width: 680px){
+    /* Le header */
     li{
-        margin: 0;
+        margin: 0 0 0 5%;
         padding: 5%;
-        margin-left: 5%;
     }
     nav{
         width: 20%;
@@ -221,9 +224,16 @@ footer button{
         display: flex;
         justify-content: space-evenly;
     }
+
+    /* Le tableau */
     table{
         width: 40%;
     }
+    td{
+        font-size: 1rem;
+    }
+
+    /* Le menu des plats*/
     #cartePlats p{
         font-size: 1.5vw;
     }
@@ -239,6 +249,8 @@ footer button{
     #cartePlats img {
         width: 20%;
     }
+
+    /* Le blog */
     #blogZone #flex{
         display: flex;
         flex-wrap: wrap;
