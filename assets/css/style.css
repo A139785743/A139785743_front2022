@@ -1,6 +1,10 @@
 *{
     font-family: 'Lato', sans-serif;
 }
+:root{
+    --c_dark: #2D3142;
+    --c_white: #ffffff;
+}
 /* Debut header*/
 header{
     background-color: #4F5D75;
@@ -11,7 +15,7 @@ header{
 }
 h1{
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--c_white);
     font-family: 'Righteous', cursive;
     font-weight: bold;
 }
@@ -32,7 +36,7 @@ li{
     transition: 1s ease-in-out;
 }
 li a{
-    color: #FFFFFF;
+    color: var(--c_white);
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -40,12 +44,12 @@ li:hover {
     background-color: #EF8354;
 }
 header button{
-    background-color: #2D3142;
-    color: #FFFFFF;
-    border-color: #FFFFFF;
+    background-color: var(--c_dark);
+    color: var(--c_white);
+    border-color: var(--c_white);
     border-radius: 25%;
     text-transform: uppercase;
-    padding: 2%;
+    padding: 1%;
 }
 /* Fin header */
 /* Tout les titre */
@@ -69,7 +73,7 @@ tr:first-of-type{
 }
 tr:first-of-type, tr:last-of-type{
     background-color: #4F5D75;
-    color: #FFFFFF;
+    color: var(--c_white);
 }
 /* Fin tableau */
 /* Debut carte plats*/
