@@ -95,10 +95,11 @@ tr:first-of-type, tr:last-of-type{
     text-transform: uppercase;
     margin-bottom: 1%;
     padding-top: 1%;
+    font-size: 3vw;
 }
 #cartePlats p{
     text-align: center;
-    font-size: 1rem;
+    font-size: 2vw;
 }
 #cartePlats article:nth-child(2n){
     background-color: #EAEBEB;
