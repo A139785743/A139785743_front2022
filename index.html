@@ -63,30 +63,102 @@
         <div id="blog"></div>
         <article id="blogZone">
             <h2>Blog</h2>
-            <article>
-                <div class="overflow"><img src="assets/img/pic01.jpg" alt="un grillage avec des cadena attacher et un ruban"></div>
-                <h3>Un super titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dignissimos dolorum id illo neque pariatur qui rerum sit. Ducimus eveniet exercitationem facere illo necessitatibus provident quos vero voluptates! Praesentium!</p>
-            </article>
-            <article>
-                <div class="overflow"><img src="assets/img/pic02.jpg" alt="Un tramwail au milieu d'une rue"></div>
-                <h3>Un super titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti eveniet, fugiat modi quibusdam sapiente sequi? Ad aliquid dicta ex iste, officiis quis voluptatem? Amet dolores maiores non reprehenderit tenetur!</p>
-            </article>
-            <article>
-                <div class="overflow"><img src="assets/img/pic03.jpg" alt="La voile d'un bateau"></div>
-                <h3>Un super titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolores eaque eligendi ex expedita harum impedit in ipsa, laborum laudantium neque obcaecati officiis omnis placeat repellendus sit vel voluptatem voluptatibus!</p>
-            </article>
-            <article>
-                <div class="overflow"><img src="assets/img/pic04.jpg" alt="Une plage en couchere de soleil avec un siege de maitre nageur"></div>
-                <h3>Un super titre</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur incidunt ipsam libero nulla quos sequi soluta ullam! Consectetur consequatur eius eligendi eos error esse, exercitationem fuga id provident quisquam tenetur!</p>
-            </article>
+            <div id="flex">
+                <article>
+                    <div class="overflow"><img src="assets/img/pic01.jpg"
+                                               alt="un grillage avec des cadena attacher et un ruban"></div>
+                    <h3>Un super titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dignissimos dolorum id
+                        illo neque pariatur qui rerum sit. Ducimus eveniet exercitationem facere illo necessitatibus
+                        provident quos vero voluptates! Praesentium!</p>
+                </article>
+                <article>
+                    <div class="overflow"><img src="assets/img/pic02.jpg" alt="Un tramwail au milieu d'une rue"></div>
+                    <h3>Un super titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum deleniti eveniet, fugiat modi
+                        quibusdam sapiente sequi? Ad aliquid dicta ex iste, officiis quis voluptatem? Amet dolores
+                        maiores non reprehenderit tenetur!</p>
+                </article>
+                <article>
+                    <div class="overflow"><img src="assets/img/pic03.jpg" alt="La voile d'un bateau"></div>
+                    <h3>Un super titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, dolores eaque eligendi ex
+                        expedita harum impedit in ipsa, laborum laudantium neque obcaecati officiis omnis placeat
+                        repellendus sit vel voluptatem voluptatibus!</p>
+                </article>
+                <article>
+                    <div class="overflow"><img src="assets/img/pic04.jpg"
+                                               alt="Une plage en couchere de soleil avec un siege de maitre nageur">
+                    </div>
+                    <h3>Un super titre</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur incidunt ipsam libero nulla
+                        quos sequi soluta ullam! Consectetur consequatur eius eligendi eos error esse, exercitationem
+                        fuga id provident quisquam tenetur!</p>
+                </article>
+            </div>
         </article>
         <!-- Fin blog -->
     </main>
-
+    <footer>
+        <h2>formulaire de contact</h2>
+        <p>Pour plus de details vous pouvez consulter notre site <a href="https://www.edenschool.fr/">ici</a></p>
+        <h3>information de contact</h3>
+        <form method="POST">
+            <div id="bordure">
+                <h4>Quel est votre age</h4>
+                <div>
+                    <div>
+                        <input type="radio" name="age" id="12" value="12" checked>
+                        <label for="12">12-14</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="age" id="15" value="15">
+                        <label for="15">15-17</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="age" id="18" value="18">
+                        <label for="18">18-19</label>
+                    </div>
+                </div>
+            </div>
+            <label for="nom">nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Saisissez votre nom" required>
+            <br>
+            <label for="email">mail :</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+            <br>
+            <h3>Votre jeu préféré</h3>
+            <label for="console">choisissez une console :</label>
+            <select id="console" name="console">
+                <optgroup label="console">
+                    <option value="">--choisissez une console--</option>
+                    <option value="XB">X Box</option>
+                    <option value="N">Nintendo</option>
+                    <option value="PS">Playstation</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="jeu">choisissez un jeu :</label>
+            <select id="jeu" name="jeu">
+                <optgroup label="jeu">
+                    <option value="XB">--choisissez un jeu--</option>
+                    <option value="XB">minecraft</option>
+                    <option value="N">Fall guys</option>
+                    <option value="PS">Ark suvival evolued</option>
+                </optgroup>
+            </select>
+            <br>
+            <h3>Votre message</h3>
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="15" cols="25" placeholder="Saisissez votre message"></textarea>
+            <br>
+            <label for="mdp">Mot de passe *</label>
+            <input type="password" id="mdp" name="mdp">
+            <br>
+            <button type="submit" name="inscription">Envoyer votre message</button>
+            <br>
+        </form>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

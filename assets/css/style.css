@@ -41,16 +41,17 @@ li a{
     text-decoration: none;
     text-transform: uppercase;
 }
-li:hover {
+li:hover , button:hover{
     background-color: #EF8354;
 }
 header button{
     background-color: var(--c_dark);
     color: var(--c_white);
     border-color: var(--c_white);
-    border-radius: 25%;
+    border-radius: 10px;
     text-transform: uppercase;
     padding: 1%;
+    transition: 1s;
 }
 /* Fin header */
 /* Tout les titre */
@@ -145,6 +146,118 @@ tr:first-of-type, tr:last-of-type{
     height: 20vw;
 }
 /* Fin blog */
-.clear{
+/* debuts footer*/
+footer{
+    background-color: #4F5D75;
+    color: var(--c_white);
+    text-align: center;
+    padding-top: 1%;
+}
+footer a{
+    color: #EF8354;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+#bordure{
+    border: 2px solid var(--c_white);
+    width: 60vw;
+    margin: 0 auto;
+}
+form h4{
+    text-align: left;
+    margin: 0 0 0 5%;
+}
+#bordure div{
+    display: flex;
+    justify-content: space-between;
+}
+form input, form select{
+    border-radius: 10px;
+    height: 4vh;
+    margin-top: 1%;
+}
+footer h3{
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+form textarea{
+    width: 50%;
+    height: 10vw;
+    border-radius: 20px;
+}
+footer button{
+    background-color: var(--c_dark);
+    color: var(--c_white);
+    border-color: var(--c_white);
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 1%;
+    transition: 1s;
+    margin-top: 5%;
+}
+/* Fin footer */
+.darkmode{
+    text-align: center;
+    margin-top: 45vh;
+    font-size: 3vw;
+    color: var(--c_white);
+    text-transform: uppercase;
+}
+
+
+/* Le responsive */
+@media (min-width: 680px){
+    li{
+        margin: 0;
+        padding: 5%;
+        margin-left: 5%;
+    }
+    nav{
+        width: 20%;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    table{
+        width: 40%;
+    }
+    #cartePlats p{
+        font-size: 1.5vw;
+    }
+    #cartePlats h3{
+        font-size: 2.5vw;
+    }
+    #cartePlats article {
+        height: 15vw;
+    }
+    #cartePlats h3, #cartePlats p {
+        margin: 0 0 0 23%;
+    }
+    #cartePlats img {
+        width: 20%;
+    }
+    #blogZone #flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #blogZone article{
+        width: 40%;
+    }
+    #blogZone img{
+        top: -5vw;
+    }
+    .overflow{
+        height: 15vw;
+    }
+}
+
+
+.clear {
     clear: both;
 }
