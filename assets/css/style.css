@@ -159,10 +159,13 @@ footer a{
     color: #EF8354;
 }
 
-#bordure{
+fieldset{
     border: 2px solid var(--c_white);
-    width: 60vw;
+    width: 50vw;
     margin: 0 auto;
+}
+legend{
+    text-align: left;
 }
 form h4{
     text-align: left;
@@ -171,7 +174,7 @@ form h4{
 form div label{
     margin-top: 17%;
 }
-#bordure div{
+fieldset div{
     display: flex;
     justify-content: space-between;
 }
