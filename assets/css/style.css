@@ -18,6 +18,7 @@ h1{
     color: var(--c_white);
     font-family: 'Righteous', cursive;
     font-weight: bold;
+    margin: 0 10%;
 }
 h1::before{
     content: open-quote;
@@ -79,7 +80,7 @@ tr:first-of-type, tr:last-of-type{
 /* Debut carte plats*/
 #cartePlats article{
     width: 80%;
-    height: 25vw;
+    height: 20vw;
     margin: 0 auto 2%;
     padding-right: 3%;
 }

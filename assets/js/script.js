@@ -1,5 +1,5 @@
+// les let et les const
 let platsDiv = document.getElementById("cartePlats");
-
 const plat = [
     {
     imgSrc: "assets/img/img-01.jpg",
@@ -27,6 +27,8 @@ const plat = [
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis culpa dignissimos dolorum id illo neque pariatur qui rerum sit. Ducimus eveniet exercitationem facere illo necessitatibus provident quos vero voluptates! Praesentium!"
     },
 ];
+
+// l'affichage dans la page
 for (const element of plat){
     let article = document.createElement("article");
     platsDiv.appendChild(article);
