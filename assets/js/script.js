@@ -48,9 +48,9 @@ function darker() {
     footer.style.display = "none";
     body.style.backgroundColor = "#4F5D75";
     let p = document.createElement("p");
-    p.innerText = "C'est une blague ... rechargez la page"
+    p.innerText = "C'est une blague ... rechargez la page";
     p.classList.add("darkmode");
     body.appendChild(p);
 
 }
-darkMode.addEventListener("click", darker)
+darkMode.addEventListener("click", darker);
